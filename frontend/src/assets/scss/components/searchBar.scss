@@ -1,0 +1,40 @@
+.searchbar {
+	width: 100%;
+	display: flex;
+	margin: 20px 0px 0px;
+	.input-field {
+		width: inherit;
+		padding: 12px;
+		border-radius: 50px;
+		border: none;
+		margin-right: 5px;
+		background-color: black;
+		color: white;
+	}
+	button {
+		&:disabled {
+			background-color: grey;
+			&:hover {
+				cursor: not-allowed;
+			}
+		}
+	}
+}
+.primary-button {
+	border-radius: 10px;
+	border: 2px solid #ffce00;
+	background-color: transparent;
+	padding: 10px 12px;
+	color: black;
+
+	&:hover {
+		background-color: #ffce00;
+		cursor: pointer;
+	}
+}
+
+.loader-container {
+	// display: flex;
+	// justify-content: center;
+	text-align: center;
+}

@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: ./backend # Specify the path to the backend Dockerfile
+    ports:
+      - "8000:8000" # Map the backend service port
+
+  frontend:
+    build:
+      context: ./frontend # Specify the path to the frontend Dockerfile
+    ports:
+      - "3000:3000" # Map the frontend service port
+    depends_on:
+      - backend # Ensure the backend service is started before the frontend
+

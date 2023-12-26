@@ -1,0 +1,101 @@
+.post {
+	background-color: grey;
+	margin: 20px;
+}
+.post-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+	margin: auto;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color: black;
+	color: White;
+
+	.post-header {
+		border-radius: 28px 28px 0px 0px;
+		padding: 10px 0px 10px 20px;
+		display: flex;
+		align-items: center;
+		.image-circle {
+			border-radius: 50%;
+			background-color: red;
+			min-width: 30px;
+			min-height: 30px;
+			margin-right: 10px;
+		}
+		.text {
+		}
+	}
+	.post-body {
+		background-color: white;
+		color: black;
+		padding: 20px 0px 20px 30px;
+		border-bottom: 1px solid black;
+	}
+	.post-footer {
+		padding: 0px 0px 0px 0px;
+		border-radius: 0px 0px 30px 30px;
+	}
+	.comments-input-container {
+		padding: 10px;
+
+		.input-field {
+			width: inherit;
+			padding: 10px;
+			width: inherit;
+			border-radius: 50px;
+			border: 1.5px SOLID BLACK;
+			margin-right: 5px;
+			color: black;
+		}
+		button {
+			color: white;
+			&:disabled {
+				background-color: grey;
+				&:hover {
+					cursor: not-allowed;
+				}
+			}
+		}
+	}
+	.comments-container {
+		border-bottom: none;
+		padding: 10px 0px 10px 15px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px SOLID white;
+		&:first-child {
+			border-bottom: 1px SOLID white;
+		}
+		&:last-child {
+			border-bottom: none;
+			border-radius: 0px 0px 30px 30px;
+		}
+		.image-circle {
+			border-radius: 50%;
+			background-color: red;
+			min-width: 35px;
+			min-height: 35px;
+
+			margin-right: 10px;
+		}
+		.user-id {
+			font-size: 12px;
+			margin-bottom: 6px;
+		}
+		.comment {
+			font-size: 18px;
+		}
+	}
+}
+
+.response-container {
+	margin: auto;
+	text-align: center;
+
+	button {
+		margin-top: 20px;
+	}
+}

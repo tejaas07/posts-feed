@@ -1,0 +1,44 @@
+.add-user-button {
+	text-align: right;
+	button {
+		margin: 20px 0px;
+	}
+}
+.add-post {
+	margin: 0px 0px 30px;
+	text-align: center;
+	border-radius: 30px;
+	border: 1px solid black;
+	background-color: #7fddf3;
+
+	&-heading {
+		padding: 20px 0px 30px;
+	}
+
+	&-user {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+
+		.input-container {
+			.input-field {
+				padding: 10px 20px 10px 15px;
+				border-radius: 50px;
+				border: none;
+				margin-right: 5px;
+				background-color: black;
+				color: white;
+			}
+			button {
+				padding: 7px 10px;
+				&:disabled {
+					background-color: grey;
+					border: none;
+					&:hover {
+						cursor: not-allowed;
+					}
+				}
+			}
+		}
+	}
+}
